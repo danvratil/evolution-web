@@ -9,8 +9,8 @@
     </div>
 
     <div class="content without_sidebar">
-      <p class="main_feature">You want features? Evolution has'em. Wanna see for yourself? Click a picture below, or
-      check out the <a href="screenshots.shtml">screenshots area.</a></p>
+      <p class="main_feature">You want features? Evolution has them! Click a picture below, or
+      check out the <a href="screenshots.shtml">screenshots area</a>.</p>
 
       <div class="grid_12 alpha omega">
         <h3>Intelligent Junk Mail Control</h3>
@@ -33,7 +33,7 @@
 
         <p>See your email the way you want it. Search Folders are saved intelligent searches which can display groups of
         email according to user-specified criteria. Create Search Folders to combine mail from different mail accounts into
-        a single view, quickly view all mail from your boss (or a particular friend :) - and new in 2.0, optional include
+        a single view, quickly view all mail from your boss (or a particular friend :) - and optionally include
         entire threads in the results!</p>
       </div>
 
@@ -45,18 +45,18 @@
 
         <p>Evolution includes support for signing and encrypting mail via GPG (GNU Privacy Guard) and S/MIME. Encrypting
         mail helps you protect your privacy and helps those receiving your mail know its really from you. Evolution
-        2.0 includes a handy interface to help you manage your GPG keys and S/MIME certificates as well as a place to
+        includes a handy interface to help you manage your GPG keys and S/MIME certificates as well as a place to
         manage keys and certificates which have been shared to you.</p>
       </div>
 
       <div class="grid_12 alpha omega">
         <h3>Desktop Integration</h3>
 
-        <p>By using the evolution-data-server, other GNOME applications are integrating with Evolution.</p>
+        <p>By using evolution-data-server, other GNOME applications are integrating with Evolution.</p>
 
         <ul>
-          <li>gnome-panel calendar applet lists your appointments and tasks.</li>
-          <li>Synchronize your <a href="http://pidgin.im/">Pidgin</a> buddies with your Evolution contacts.</li>
+          <li>The calendars in gnome-shell and gnome-panel list your appointments and tasks.</li>
+          <li>Synchronize <a href="https://live.gnome.org/Empathy">Empathy</a> buddies with your Evolution contacts.</li>
           <li>View <a href="http://live.gnome.org/Planner">Planner</a> files as Evolution task lists.</li>
         </ul>
       </div>
@@ -107,9 +107,9 @@
 
   <div class="container_12">
     <div class="content without_sidebar">
-      <h2>Plugins</h2>
+      <h2>Lots of features!</h2>
 
-      <p class="main_feature">Evolution comes loaded with plugins to choose from.</p>
+      <p class="main_feature">Evolution provides lots of small features to make your life easier.</p>
 
       <div class="container_12">
         <div class="grid_6 alpha">
@@ -132,29 +132,16 @@
           <h3>Calendar Publishing</h3>
           <p>Publish calendars to the web.</p>
         </div>
-
-        <div class="grid_6 omega">
-          <h3>Default Sources</h3>
-          <p>Mark your preferred address book and calendar as default.</p>
-        </div>
-        <div class="grid_6 alpha">
-          <h3>Attachment Reminder</h3>
-          <p>Reminds you when you forgot to add an attachment to a mail message.</p>
-        </div>
         <div class="grid_6 omega">
           <h3>External Editor</h3>
           <p>Use your preferred text editor to compose messages.</p>
         </div>
         <div class="grid_6 alpha">
-          <h3>Face</h3>
+          <h3>Faces</h3>
           <p>Attach a small picture of your face to outgoing messages.</p>
         </div>
-        <div class="grid_6 omega">
-          <h3>IMAP Features</h3>
-          <p>Fine-tune your IMAP accounts.</p>
-        </div>
         <div class="grid_6 alpha">
-          <h3>Itip Formatter</h3>
+          <h3>ITIP Formatter</h3>
           <p>Display "text/calendar" MIME parts in mail messages.</p>
         </div>
         <div class="grid_6 omega">
@@ -169,10 +156,6 @@
           <h3>Mail-to-Task</h3>
           <p>Convert a mail message to a task.</p>
         </div>
-        <div class="grid_6 alpha">
-          <h3>Mark All Read</h3>
-          <p>Mark all mail messages in a folder as read.</p>
-        </div>
         <div class="grid_6 omega">
           <h3>Outlook DBX Import</h3>
           <p>Import DBX files from Microsoft Outlook Express.</p>
@@ -185,11 +168,6 @@
           <h3>Prefer Plain Text</h3>
           <p>View mail messages as plain text, even if they contain HTML content.</p>
         </div>
-        <div class="grid_6 alpha">
-          <h3>Save Selected</h3>
-          <p>Save a calendar or task list to disk.</p>
-        </div>
-
         <div class="grid_6 omega">
           <h3>Templates</h3>
           <p>Compose a new message from a saved template.</p>

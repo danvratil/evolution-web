@@ -13,14 +13,14 @@
         <h3>Gettings Started</h3><img src="./images/48/tip.png" align="left" />
 
         <p>There is information on <a href="git.shtml">Git</a>, a short <a href="arch.shtml">Architecture Overview</a>
-        and a <a href="http://live.gnome.org/Evolution/Planning230">Planning Page</a>. There is also
+        and a <a href="https://live.gnome.org/Evolution/Planning36">Planning Page</a>. There is also
         <a href="patch.shtml">Patch Submission Information</a>. In addition, the links below are quite useful for
         discovering more information.</p>
 
         <ul>
           <li><a href="build.shtml">Building Evolution</a></li>
           <li><a href="patch.shtml">Patch guidelines</a></li>
-          <li><a href="bugs.shtml">All bout bugs</a></li>
+          <li><a href="bugs.shtml">All about bugs</a></li>
           <!--<li><a href="bugday.shtml">Bug Day</a> (every Thursday)</li>-->
             <!--<li><a href="eplugins.shtml">EPluginsinformation</a></li> FIXME - I dropped EPlugins section //-->
         </ul>
@@ -36,16 +36,15 @@
         <p>These are the docs in their current state</p><br />
 
         <ul>
-          <li><a href="http://library.gnome.org/devel/camel/stable/">Camel Reference Manual</a></li>
-          <li><a href="http://library.gnome.org/devel/libebackend/stable/">Evolution API Reference: libebackend, backend utility library</a></li>
-          <li><a href="http://library.gnome.org/devel/libebook/stable/">Evolution API Reference: libebook, the Addressbook Library</a></li>
-          <li><a href="http://library.gnome.org/devel/libecal/stable/">Evolution API Reference: libecal, the Calendar Library</a></li>
-          <li><a href="http://library.gnome.org/devel/libedata-book/stable/">Evolution API Reference: libedata-book, the Addressbook backend library</a></li>
-          <li><a href="http://library.gnome.org/devel/libedata-cal/stable/">Evolution API Reference: libedata-cal, the Calendar Backend Library</a></li>
-          <li><a href="http://library.gnome.org/devel/libedataserver/stable/">Evolution API Reference: libedataserver, utility library</a></li>
-          <li><a href="http://library.gnome.org/devel/libedataserverui/stable/">Evolution API Reference: libedataserverui, graphical utility library</a></li>
-          <li><a href="http://library.gnome.org/devel/evolution-exchange/stable/">Evolution Connector for Microsoft Exchange Programmer's Reference Manual</a></li>
-          <li><a href="developer-doc/eplugin/">EPlugin Manual (HTML)</a> (<a href="developer-doc/eplugin/evolution-plugin-manual.pdf">PDF</a>)</li>
+          <li><a href="http://developer.gnome.org/camel/stable/">Camel Reference Manual</a></li>
+          <li><a href="http://developer.gnome.org/libebackend/stable/">Evolution API Reference: libebackend, backend utility library</a></li>
+          <li><a href="http://developer.gnome.org/libebook/stable/">Evolution API Reference: libebook, the Addressbook Library</a></li>
+          <li><a href="http://developer.gnome.org/libecal/stable/">Evolution API Reference: libecal, the Calendar Library</a></li>
+          <li><a href="http://developer.gnome.org/libedata-book/stable/">Evolution API Reference: libedata-book, the Addressbook backend library</a></li>
+          <li><a href="http://developer.gnome.org/libedata-cal/stable/">Evolution API Reference: libedata-cal, the Calendar Backend Library</a></li>
+          <li><a href="http://developer.gnome.org/libedataserver/stable/">Evolution API Reference: libedataserver, utility library</a></li>
+          <li><a href="http://developer.gnome.org/libedataserverui/stable/">Evolution API Reference: libedataserverui, graphical utility library</a></li>
+          <li><a href="http://developer.gnome.org/evolution-exchange/stable/">Evolution Connector for Microsoft Exchange Programmer's Reference Manual</a></li>
         </ul>
 
         <p>This is the reference manual for the last public release of the GNOME Applications Library (GAL) before it
@@ -53,34 +52,9 @@
         in Evolution.</p>
 
         <ul>
-          <li><a href="developer-doc/gal/index.html">GNOME Applications Library</a></li>
+          <li><a href="developer-doc/gal/index.html">GNOME Applications Library (historical)</a></li>
         </ul>
       </div>
-    </div>
-
-    <div class="content without_sidebar">
-      <h2>EPlugins</h2>
-      <img src="./images/48/plugin.png" align= "left" />
-
-      <p>The EPlugin system allows for modular extensions to Evolution by providing a simple, practical,
-      language-neutral approach to extending Evolution's core components. Thanks to EPlugins, Evolution users can enjoy
-      extended functionality and developers can easily enhance Evolution with minimal effort.</p>
-
-      <p>It is not a scripting language, although it could be used to add a scripting language to Evolution. It is a
-      framework of helper utilities to aid application development and simultaneously provide hooks whereby
-      external code can access internal features &mdash; both user interface and behavioural.</p>
-
-      <h3>EPlugin's goals</h3>
-
-      <ul>
-        <li>Provide a language independent invocation mechanism</li>
-        <li>Allow extension of parts of the user interface and processing elements</li>
-        <li>Require minimal extra or foreign code to implement in the core application</li>
-        <li>Require minimal interface code to implement the extensions</li>
-        <li>Not to impact performance or increase resource usage unduly</li>
-        <li>Versioning</li>
-        <li>The ability to extended itself fairly easily</li>
-      </ul>
     </div>
 
     <div class="content without_sidebar">

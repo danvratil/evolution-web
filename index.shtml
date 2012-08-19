@@ -18,18 +18,17 @@
 
       <div class="container_12">
         <div class="grid_4 alpha features_list">
-          <p><img src="./images/16/worm.png" alt="No viruses">No viruses.</p>
+          <p><img src="./images/16/worm.png" alt="No viruses">No viruses or malware</p>
+          <p><img src="./images/16/about.png" alt="Open Source">Open Source</p>
+          <p><img src="./images/16/mail-open-multiple.png" alt="Multiple accounts">Multiple accounts</p>
           <p><img src="./images/16/spam.png" alt="Junk filtering">Junk filtering</p>
-          <p><img src="./images/16/desktop.png" alt="Desktop integration">Desktop integration</p>
-          <p><img src="./images/16/devel.png" alt="Developer Platform">Developer Platform (EDS)</p>
-          <p><img src="./images/16/mono.png" alt="Evolution for MONO">Evolution#</p>
-          <p><img src="./images/16/plugin.png" alt="EPlugins">EPlugin</p>
           <p><img src="./images/16/search.png" alt="Advanced mail searching">Advanced email searching</p>
+          <p><img src="./images/16/desktop.png" alt="Desktop integration">Desktop integration</p>
+
         </div>
         <div class="grid_4 features_list">
           <p><img src="./images/16/web-calendar.png" alt="Web calendars">Web calendars</p>
           <p><img src="./images/16/autofilter.png" alt="User-defined filters">User-defined filters</p>
-          <p><img src="./images/16/mail-open-multiple.png" alt="Multiple accounts">Multiple accounts</p>
           <p><img src="./images/16/sync.png" alt="Palm device support">Palm device support</p>
           <p><img src="./images/16/appointment-reminder.png" alt="Customized reminders">Customized reminders</p>
           <p><img src="./images/16/calendar-views.png" alt="Multiple calendar views">Multiple calendar views</p>
@@ -37,10 +36,10 @@
         </div>
         <div class="grid_4 omega features_list">
           <p><img src="./images/16/to-do.png" alt="To-Do list">To-Do list</p>
+          <p><img src="./images/16/devel.png" alt="Developer Platform">Developer Platform (EDS)</p>
           <p><img src="./images/16/ldap.png" alt="LDAP compatible">LDAP compatible</p>
           <p><img src="./images/16/addressbook.png" alt="Share vCards">Share vCards</p>
           <p><img src="./images/16/lock-ok.png" alt="Security and encryption">Security and encryption</p>
-          <p><img src="./images/16/about.png" alt="Open Source">Open Source</p>
           <p>(<a href="./features.shtml">read more...</a>)</p>
         </div>
 
@@ -77,8 +76,9 @@
             <div class="grid_5 omega">
               <h3><a href= "http://live.gnome.org/TranslationProject"><a name="translations">Translate Evolution!</a></a></h3>
 
-              <p>If you are interested in helping to translate Evolution, talk to the
-              <a href= "http://live.gnome.org/TranslationProject">GNOME Translation Project</a>.</p>
+              <p>If you are interested in helping to translate Evolution, 
+              <a href="http://l10n.gnome.org/module/evolution/">check</a>if your language needs help and contact 
+              to the <a href= "http://live.gnome.org/TranslationProject">GNOME Translation Project</a>.</p>
             </div>
           </div>
         </div>
@@ -93,8 +93,7 @@
               <h3><a href="http://bugzilla.gnome.org/enter_bug.cgi?product=Evolution"><a name="bugs">Report Bugs</a></a></h3>
 
               <p>Help us improve Evolution by reporting bugs to
-              <a href="http://bugzilla.gnome.org/enter_bug.cgi?product=Evolution">Bugzilla</a>,
-              our bug tracking system.</p>
+              <a href="http://bugzilla.gnome.org/enter_bug.cgi?product=Evolution">our bug tracking system</a>.</p>
             </div>
           </div>
 
