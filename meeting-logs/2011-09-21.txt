@@ -1,0 +1,101 @@
+Sep 21 11:29:54 <chen>	Lets get started!!
+Sep 21 11:30:10 <chen>	starting with project updates,
+Sep 21 11:30:23 <chen>	hard-code freeze is on and we have the 3.2.0 release coming Monday!!
+Sep 21 11:30:42 <chen>	https://live.gnome.org/Evolution/Planning32 has the summary of some major work done!!
+Sep 21 11:31:07 <chen>	branching for gnome-3-2 would be done  on sep 26 immediately after 3.2.0 release,
+Sep 21 11:31:45 <chen>	 i was thinking of branching it today after having a word with mbarnes, but mchra rightly pointed,
+Sep 21 11:32:02 <chen>	 the need for translators to commit in two branches. so we thought about branching next week,
+Sep 21 11:32:15 <chen>	hope everyone are fine with it, mbarnes ?
+Sep 21 11:32:58 <mbarnes>	fine with me
+Sep 21 11:33:02 *	mcrha kindly asks to branch evo-mapi together with other modules, or point out to an how-to
+Sep 21 11:33:06 <chen>	mbarnes, thanks
+Sep 21 11:33:23 <mbarnes>	mcrha: I'll add a section to ReleaseHOWTO on the wiki
+Sep 21 11:33:41 <chen>	cool
+Sep 21 11:33:55 <mcrha>	thanks
+Sep 21 11:34:19 <chen>	planning for 3.4 release is on and please populate the https://live.gnome.org/Evolution/Planning34 with what your on to for the same
+Sep 21 11:34:47 <chen>	had a discussion with srag last week regarding e-mail-factory,
+Sep 21 11:35:05 <chen>	it would be merged during the initial phase of 3.2.0 hopefully by 3.2.1
+Sep 21 11:35:11 *	xtian (~chris@port-217-146-132-69.static.qsc.de) has joined #evolution-meet
+Sep 21 11:35:16 <xtian>	moin.
+Sep 21 11:35:18 <lakhil>	chen, 3.3.1 ?
+Sep 21 11:35:21 <chen>	hey xtian 
+Sep 21 11:35:28 <chen>	oops sorry, 3.3.1 :)
+Sep 21 11:35:33 <chen>	thanks lakhil :)
+Sep 21 11:35:37 <lakhil>	np
+Sep 21 11:35:55 <chen>	thats with the project updates,
+Sep 21 11:36:09 <chen>	anything else to discuss before we move on with individual updates ?
+Sep 21 11:36:57 <chen>	updates from my side, had been mostly with ews+sled fixing issues,
+Sep 21 11:37:15 <chen>	have a couple of issues to fix in address-book and after which i can say its fully complete
+Sep 21 11:37:26 <chen>	dvratil, updates?
+Sep 21 11:38:00 <chen>	jpunit, updates?
+Sep 21 11:38:23 <dvratil>	not much, I just spent all day rebasing webkit to master so that I can build against new Gtk, otherwise I have attachments working...otherwise I wasn't much at work this month
+Sep 21 11:38:43 <chen>	dvratil, thanks!!
+Sep 21 11:38:51 <chen>	kov, anything to share?
+Sep 21 11:39:05 *	dwmw2 (~ctrlproxy@twosheds.infradead.org) has joined #evolution-meet
+Sep 21 11:39:07 <chen>	lakhil, updates?
+Sep 21 11:39:10 <chen>	hey dwmw2 
+Sep 21 11:39:13 <jpunit>	Hi all n chen I am working on some bug fixes mostly ews related 
+Sep 21 11:39:24 <lakhil>	chen, ews testing, sanity of 3.1.92, and usual bug triaging
+Sep 21 11:39:27 <chen>	jpunit, thanks
+Sep 21 11:39:35 <chen>	lakhil, thanks
+Sep 21 11:39:41 <chen>	mbarnes, updates?
+Sep 21 11:39:43 <mbarnes>	account-mgmt progress:
+Sep 21 11:39:43 <mbarnes>	I have a new D-Bus service written for E-D-S called e-source-registry
+Sep 21 11:39:43 <mbarnes>	which fills the role we're relying on GConf for now w.r.t account info
+Sep 21 11:39:43 <mbarnes>	it uses the new gdbus-codegen tool in GLib 2.30, which is quite nice
+Sep 21 11:39:43 <mbarnes>	(we should definitely look into using it for the book/cal stuff)
+Sep 21 11:39:43 <mbarnes>	otherwise, just queueing up a bunch of 3.3 commits
+Sep 21 11:40:04 <lakhil>	dvratil, do you have any dot release in mind for webkit merge ?
+Sep 21 11:40:16 <dwmw2>	ews camel is now working in evo HEAD, with a one-line fix I committed today.
+Sep 21 11:40:26 <chen>	mbarnes, thanks!
+Sep 21 11:40:35 <dwmw2>	activesync is also now working in evo HEAD
+Sep 21 11:40:36 <chen>	dwmw2, ah nice :)
+Sep 21 11:40:47 <dwmw2>	chen : you did most of the work for ews :)
+Sep 21 11:40:54 <dvratil>	lakhil, sorry, not yet - there are some ugly Gtk bugs in layouting which must be fixed or worked-around first and there's still sooo much to be done :)
+Sep 21 11:41:08 <chen>	dwmw2, and u gave the final touch :)
+Sep 21 11:41:12 <lakhil>	dvratil, np, thanks :)
+Sep 21 11:41:19 <dwmw2>	well not final. Final is when you fix cal/ebook too :)
+Sep 21 11:41:29 <dwmw2>	but at least it reads email again now
+Sep 21 11:41:36 <chen>	dwmw2, thats right :)
+Sep 21 11:41:48 <chen>	mcrha, updates?
+Sep 21 11:42:26 <mcrha>	nothing much, just last touches before har dcode freeze and patch preparations for other bugs filled
+Sep 21 11:42:37 <chen>	mcrha, thanks!!
+Sep 21 11:42:43 <chen>	rgs, anything to share?
+Sep 21 11:43:09 <chen>	vibs, updates?
+Sep 21 11:43:12 <rgs>	not much, fixing a few bugs in folks-eds now that it's being exposed to heavy testing in GNOME 3 
+Sep 21 11:43:16 <vibs>	heya, During past month i was mostly fixing issues for SLED and EWS Addressbook. 
+Sep 21 11:43:27 <chen>	rgs, thanks
+Sep 21 11:43:36 <chen>	vibs, thanks!
+Sep 21 11:43:40 <chen>	xtian, updates?
+Sep 21 11:43:48 <xtian>	speedup work for evolution-kolab core this week (still for 2.30), porting to git master starts by end of next week (with plannings going on for a while already)
+Sep 21 11:44:08 <chen>	xtian, thanks!!
+Sep 21 11:44:39 <chen>	anything else from anyone before we conclude ?
+Sep 21 11:44:45 <lakhil>	as we are doing planning for 3.4, just curious do we foresee any effort for little bit UI revamp in 3.3.x ? for reference http://afaikblog.wordpress.com/2010/11/25/evolution-re-evolved/ ?
+Sep 21 11:45:25 <chen>	lakhil, its here https://live.gnome.org/Evolution/Planning34
+Sep 21 11:45:45 <chen>	lakhil, not sure if anyone is on it
+Sep 21 11:45:45 <mbarnes>	there's probably bits and pieces of that we could take.  also some stuff in express mode still needs merged
+Sep 21 11:45:56 <mbarnes>	particularly, account setup and the tabbed comp editor
+Sep 21 11:46:21 <chen>	mbarnes, would it be good to add it to planning page?
+Sep 21 11:46:40 <lakhil>	sure, thanks
+Sep 21 11:47:00 <mbarnes>	chen: only if someone volunteers.  I think I'm booked solid already for 3.4
+Sep 21 11:47:13 <chen>	mbarnes, i can understand
+Sep 21 11:47:33 <chen>	btw any ideas for celebrating the 3.2 release together online ? :)
+Sep 21 11:47:34 <xtian>	i've hacked up a list of changes since 2.30 as discussed on e-h list (and posted it there), so if anyone is interested to check it
+Sep 21 11:47:44 <xtian>	\o/
+Sep 21 11:48:15 <chen>	xtian, sure
+Sep 21 11:48:58 <chen>	lets think about the celebration later.. happy 3.2 release!!
+Sep 21 11:49:09 *	mbarnes celebrates by closing IRC and sleeping in  :)
+Sep 21 11:49:15 <xtian>	chen: if anyone has some spare time to cross-check whether i've missed something ... mbarnes was kind enough to skim through it
+Sep 21 11:49:16 <chen>	hehe
+Sep 21 11:49:46 <chen>	xtian, i can do it sometime next week, plz remind me :)
+Sep 21 11:50:16 <xtian>	chen: okay, will do. this should help me porting evo-kolab ... which will be *fun*. :)
+Sep 21 11:50:20 <dwmw2>	what do people think about putting activesync on git.gnome.org
+Sep 21 11:50:38 <dwmw2>	given http://git.infradead.org/activesyncd.git/blob/HEAD:/README
+Sep 21 11:50:56 <dvratil>	chen, is there already some approximate date for 3.4  release? 
+Sep 21 11:51:11 *	mcrha is now known as mcrha|afk
+Sep 21 11:51:23 <chen>	dvratil, should be in next 6 months time
+Sep 21 11:51:26 <mbarnes>	dwmw2: if it's free software and relates to gnome, go for it
+Sep 21 11:51:30 <dvratil>	chen, thanks
+Sep 21 11:52:24 <chen>	Lets then meet next month while coding for 3.4!! thanks everyone!!
+Sep 21 11:52:25 <lakhil>	dvratil, https://live.gnome.org/ThreePointThree , still a draft, not the final schedule
+Sep 21 11:52:33 <xtian>	thanks chen 

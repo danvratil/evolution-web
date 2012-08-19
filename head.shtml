@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+
+  <base href="http://people.gnome.org/~dvratil/evolution/"></base>
+
+  <title><!--#echo var="title" --></title>
+  <link rel="stylesheet" type="text/css" media="all" href="http://www.gnome.org/wp-content/themes/gnome-grass/style.css">
+  <link rel="icon" type="image/png" href="http://www.gnome.org/wp-content/themes/gnome-grass/images/favicon.png">
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/irclog.css">
+
+  <!-- Fancybox -->
+  <script type="text/javascript" src="http://www.gnome.org/wp-content/themes/gnome-grass/pack/fancybox-1.3.4/jquery.easing-1.3.pack.js"></script>
+  <script type="text/javascript" src="http://www.gnome.org/wp-content/themes/gnome-grass/pack/fancybox-1.3.4/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="http://www.gnome.org/wp-content/themes/gnome-grass/pack/fancybox-1.3.4/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://www.gnome.org/wp-content/themes/gnome-grass/css/home.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://www.gnome.org/wp-content/themes/gnome-grass/css/news.css">
+</head>
+
+<body>
+
+  <!-- accessibility access -->
+  <div id="accessibility_access">
+    <ul>
+      <li><a href="#container">Go to page content</a></li>
+      <li><a href="#top_bar">Go to main menu</a></li>
+    </ul>
+  </div>
+
+  <!-- global gnome.org domain bar -->
+  <div id="global_domain_bar">
+    <div class="maxwidth">
+      <div class="tab">
+        <a class="root" href="http://www.gnome.org/">GNOME.org</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <div id="header" class="container_12">
+    <div id="logo" class="grid_3">
+      <h1>
+        <a title="Go to home page" href="http://www.gnome.org">
+          <img src="http://www.gnome.org/wp-content/themes/gnome-grass/images/gnome-logo.png" alt="GNOME">
+        </a>
+      </h1>
+    </div>
+
+    <div id="top_bar" class="grid_9">
+      <div class="left">
+        <div class="menu-globalnav-container">
+          <ul id="menu-globalnav" class="menu">
+            <li class="menu-item <!--#if expr="$section = 'index'" -->current-menu-item<!--#endif -->"><a href="index.shtml">Evolution</a></li>
+            <li class="menu-item <!--#if expr="$section = 'features'" -->current-menu-item<!--#endif -->"><a href="features.shtml">Features</a></li>
+            <li class="menu-item <!--#if expr="$section = 'download'" -->current-menu-item<!--#endif -->"><a href="download.shtml">Download</a></li>
+            <li class="menu-item <!--#if expr="$section = 'documentation'" -->current-menu-item<!--#endif -->"><a href="documentation.shtml">Documentation</a></li>
+            <li class="menu-item <!--#if expr="$section = 'developers'" -->current-menu-item<!--#endif -->"><a href="developers.shtml">Developers</a></li>
+            <li class="menu-item <!--#if expr="$section = 'about'" -->current-menu-item<!--#endif -->"><a href="about.shtml">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div id="container" class="two_columns">

@@ -1,0 +1,137 @@
+<!--#set var="title" value="Evolution" -->
+<!--#set var="section" value="index" -->
+<!--#include virtual="head.shtml" -->
+
+<div id="container" class="two_columns">
+  <div class="container_12">
+    <div class="grid_12">
+      <div id="home_banner">
+        <img src="images/evo-title.png" style="width: 940px; height: 320px;" class="attachment-940x320 wp-post-image" alt="Evolution" title="The Evolution Email Client.">
+        <h2>Evolution is the GNOME Groupware Application.</h2>
+        <p class="main_feature">Integrated mail, addressbook and calendaring functionality.</p>
+      </div>
+      <hr class="bottom_shadow">
+    </div>
+
+    <div class="content without_sidebar">
+      <h2 style="margin-top: 0px;">Feature highligts</h2>
+
+      <div class="container_12">
+        <div class="grid_4 alpha features_list">
+          <p><img src="./images/16/worm.png" alt="No viruses">No viruses.</p>
+          <p><img src="./images/16/spam.png" alt="Junk filtering">Junk filtering</p>
+          <p><img src="./images/16/desktop.png" alt="Desktop integration">Desktop integration</p>
+          <p><img src="./images/16/devel.png" alt="Developer Platform">Developer Platform (EDS)</p>
+          <p><img src="./images/16/mono.png" alt="Evolution for MONO">Evolution#</p>
+          <p><img src="./images/16/plugin.png" alt="EPlugins">EPlugin</p>
+          <p><img src="./images/16/search.png" alt="Advanced mail searching">Advanced email searching</p>
+        </div>
+        <div class="grid_4 features_list">
+          <p><img src="./images/16/web-calendar.png" alt="Web calendars">Web calendars</p>
+          <p><img src="./images/16/autofilter.png" alt="User-defined filters">User-defined filters</p>
+          <p><img src="./images/16/mail-open-multiple.png" alt="Multiple accounts">Multiple accounts</p>
+          <p><img src="./images/16/sync.png" alt="Palm device support">Palm device support</p>
+          <p><img src="./images/16/appointment-reminder.png" alt="Customized reminders">Customized reminders</p>
+          <p><img src="./images/16/calendar-views.png" alt="Multiple calendar views">Multiple calendar views</p>
+          <p><img src="./images/16/web-calendar.png" alt="iCalendar support ">iCalendar support</p>
+        </div>
+        <div class="grid_4 omega features_list">
+          <p><img src="./images/16/to-do.png" alt="To-Do list">To-Do list</p>
+          <p><img src="./images/16/ldap.png" alt="LDAP compatible">LDAP compatible</p>
+          <p><img src="./images/16/addressbook.png" alt="Share vCards">Share vCards</p>
+          <p><img src="./images/16/lock-ok.png" alt="Security and encryption">Security and encryption</p>
+          <p><img src="./images/16/about.png" alt="Open Source">Open Source</p>
+          <p>(<a href="./features.shtml">read more...</a>)</p>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+      <hr class="bottom_shadow">
+
+      <div class="container_12">
+        <h2>Read and Participate!</h2>
+
+        <p class="main_feature">Keep track of the latest developments at the Evolution project wiki, participate
+        in the Evolution community with mailing lists, and chat with the developers and users of Evolution using
+        an IRC client.</p>
+
+        <div class="grid_6 alpha">
+          <div class="container_6">
+            <div class="grid_1 alpha">
+              <img style="margin-top: 25px;" src="./images/32/globe.png" alt="Project Wiki" width="64" height="64">
+            </div>
+
+            <div class="grid_5 omega">
+              <h3><a href="http://live.gnome.org/Evolution"><a name="wiki">Evolution's Project Wiki</a></a></h3>
+
+              <p>What's currently happening with Evolution? Keep up-to-date by tracking the most recent releases and
+              development news at the <a href="http://live.gnome.org/Evolution">Evolution project wiki</a>.</p>
+            </div>
+          </div>
+
+          <div class="container_6">
+            <div class="grid_1 alpha">
+              <img style="margin-top: 25px;" src="./images/32/language.png" alt="Translate Evolution" width="64" height="64">
+            </div>
+
+            <div class="grid_5 omega">
+              <h3><a href= "http://live.gnome.org/TranslationProject"><a name="translations">Translate Evolution!</a></a></h3>
+
+              <p>If you are interested in helping to translate Evolution, talk to the
+              <a href= "http://live.gnome.org/TranslationProject">GNOME Translation Project</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid_6 omega">
+          <div class="container_6">
+            <div class="grid_1 alpha">
+              <img style="margin-top: 25px;" src="./images/32/bug.png" alt="Report Bugs" width="64" height="64">
+            </div>
+
+            <div class="grid_5 omega">
+              <h3><a href="http://bugzilla.gnome.org/enter_bug.cgi?product=Evolution"><a name="bugs">Report Bugs</a></a></h3>
+
+              <p>Help us improve Evolution by reporting bugs to
+              <a href="http://bugzilla.gnome.org/enter_bug.cgi?product=Evolution">Bugzilla</a>,
+              our bug tracking system.</p>
+            </div>
+          </div>
+
+          <div class="container_6">
+            <div class="grid_1 alpha">
+              <img style="margin-top: 25px;" src="./images/32/chat.png" alt="Internet Relay Chat" width="64" height="64">
+            </div>
+
+            <div class="grid_5 omega">
+              <h3><a name="irc">Internet Relay Chat</a></h3>
+
+              <p>Discussion of Evolution (development and otherwise) takes place in <strong>#evolution</strong>
+              on <strong>irc.gimp.org</strong>.</p>
+            </div>
+          </div>
+
+          <div class="containe_6">
+            <div class="grid_1 alpha">
+              <img style="margin-top: 25px;" src="./images/32/mail-open.png" alt="Mailing Lists" width="64" height="64">
+            </div>
+
+            <div class="grid_5 omega">
+              <h3><a name="mailinglists">Mailing Lists</a></h3>
+
+              <p>Since there's a lot to talk about when it comes to Evolution, we have split the discussions into
+              two separate mailing lists.</p>
+
+              <ul>
+                <li><a href="http://mail.gnome.org/mailman/listinfo/evolution-list">General Questions</a></li>
+                <li><a href="http://mail.gnome.org/mailman/listinfo/evolution-hackers">Hacking Questions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--#include virtual="foot.shtml"-->

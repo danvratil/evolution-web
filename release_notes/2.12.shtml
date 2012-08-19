@@ -1,0 +1,106 @@
+<!--#set var="title" value="Evolution: Documentation" -->
+<!--#set var="section" value="documentation" -->
+<!--#include virtual="../head.shtml" -->
+
+<h2>Evolution 2.12 Release Notes</h2>
+
+<p>
+  The Evolution Team is pleased to announce the release of Evolution 2.12
+  and Evolution-Data-Server 1.12.
+</p>
+
+<h3>What's New in Evolution 2.12?</h3>
+
+<h4>Spam Improvements</h4>
+
+<ul>
+  <li>New bogofilter spam plugin</li>
+  <li>Spam plugins (bogofilter/spamassasin) can now learn ham</li>
+  <li>Spams don&#8217;t initiate new mail notifications</li>
+  <li>and&#8230;</li>
+</ul>
+
+<p>
+  <img src="../images/screenshots/2.12/spam-options.png" alt="Junk Options"/>
+</p>
+
+<h4>UI Improvements</h4>
+
+<ul>
+  <li>Basic contact merging support</li>
+  <li>Improved search support for Calendar and Tasks</li>
+  <li>New advanced search and better quick search options</li>
+  <li>Better printing support for mailer</li>
+  <li>Read all the unread mails in all folders with just space bar key</li>
+  <li>Message selection improvements</li>
+  <li>More options for offline support</li>
+  <li>New &#8211;disable-preview command line option to avoid repeated crash on last selected email</li>
+  <li>Option for Outlook style signature on top - more details <a href="http://psankar.blogspot.com/2007/07/signatures-on-top.html">here</a></li>
+  <li>Option for Outlook style reply header</li>
+  <li>Spinner in the status bar</li>
+  <li>Support for multimedia keys</li>
+  <li>Support for showing contact photos in preview pane</li>
+  <li>Thread sorting based on the date of the latest message</li>
+</ul>
+
+<h4>Performance Improvements</h4>
+
+<ul>
+  <li> Addressbook improvements from DBus port branch</li>
+  <li>EContact/VCard folding optimizations</li>
+  <li>Huge Exchange folder loading <a href="http://blogs.gnome.org/sragavan/2007/06/28/exchange-folder-loading-480-seconds-to-microseconds/">optimizations</a></li>
+</ul>
+
+<h4>New Plugins</h4>
+
+<ul>
+  <li>Bogofilter spam plugin</li>
+  <li>Attachment reminder plugin</li>
+</ul>
+
+<p>
+  <img src="../images/screenshots/2.12/attachment.png" alt="Attachment Reminder"/>
+</p>
+
+<ul>
+  <li>Mail notification plugin</li>
+</ul>
+
+<p>
+  <img src="../images/screenshots/2.12/notification.png" alt="Mail Notification"/>
+</p>
+
+<ul>
+  <li>TNEF attachment plugins (Experimental)</li>
+  <li>Revamped backup/restore plugin</li>
+</ul>
+
+<p>
+  <img src="../images/screenshots/2.12/backup.png" alt="Backup"/>
+</p>
+<p>
+  <img src="../images/screenshots/2.12/restore.png" alt="Restore"/>
+</p>
+
+<h3>Reporting Bugs</h3>
+
+<p>
+  If you have problems with Evolution 2.12, please take the time to submit
+  the bug using Bug Buddy or at <a href="http://bugzilla.gnome.org">
+  http://bugzilla.gnome.org/</a>.  Try to fill in as much detail as you can
+  regarding the circumstances that lead to the problem.
+</p>
+
+<p>
+  If you have a feature request, you can also file that at
+  <a href="http://bugzilla.gnome.org">http://bugzilla.gnome.org/</a>.
+  Don't be discouraged if you don't hear from us right away; we get hundreds
+  of feature requests a year.
+</p>
+
+<p>
+  You can also check if your bug has been reported before by using the search
+  functionality of Bugzilla.
+</p>
+
+<!--#include virtual="../foot.shtml" -->

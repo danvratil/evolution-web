@@ -1,0 +1,82 @@
+.inline-image {
+    text-align: left;
+    margin-right: 10px;
+}
+
+.inline-image-right {
+    text-align: right;
+    margin-left: 10px;
+}
+
+/* Feature highlights */
+/* ========================================================================== */
+
+.features_list p {
+    line-height: 1em;
+    font-size: 1.3em;
+}
+
+.features_list img {
+    margin-right: 10px;
+ }
+
+
+/* Credits */
+/* ========================================================================== */
+
+#credits li {
+    float: left;
+    width: 120pt;
+    margin: 0 20pt;
+    list-style: none !important;
+    white-space: nowrap;
+}
+
+#credits h3 {
+    clear: both;
+    padding-top: 20px;
+}
+
+
+/* Styled table */
+/* ============================================================================*/
+table.styled {
+    float: left;
+    width: 50%;
+}
+
+table.styled.single {
+    float: none;
+}
+
+table.styled th {
+    text-align: left;
+}
+
+/* Key Shortcuts table */
+/* ============================================================================*/
+table .keys {
+    width: 50%;
+}
+
+table.keys td {
+    padding: 5px;
+}
+
+kbd.key {
+    background: #FFF;
+    border: 1px solid #444A4E;
+    padding: 2px;
+    margin: 0 5px 0 5px;
+    display: inline;
+}
+
+/* Download table */
+/* ============================================================================*/
+table.download {
+    width: 50%;
+}
+
+table.download th {
+    text-align: left;
+}

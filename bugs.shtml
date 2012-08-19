@@ -1,0 +1,206 @@
+<!--#set var="title" value="Evolution" -->
+<!--#set var="section" value="developer" -->
+<!--#include virtual="head.shtml" -->
+
+<div id="container" class="two_columns">
+  <div class="container_12">
+    <div class="page_title">
+      <h1>A Quick Guide to Evolution Bug Hunting</h1>
+    </div>
+
+    <div class="content without_sidebar">
+
+      <h2>Getting Started</h2>
+      <p>Bug-buddy (included with GNOME) is the simplest way to report a bug in Evolution. However, if you prefer
+      writing detailed bug reports in Bugzilla yourself, this guide is for you.</p>
+
+      <p>It's suggested that you first take a look at the Git "master" branch of Evolution, to see if the bug still
+      exists in the latest codebase. If the bug still exists in the latest version of Evolution, the following
+      software will help illuminate what is occuring (and will also give you more information to help make your
+      bug reports to be more useful to the Evolution developers):</p>
+
+      <ul>
+        <li>gnome-terminal</li>
+        <li>gdb</li>
+        <li><a href="http://valgrind.org/">valgrind</a></li>
+      </ul>
+
+      <h3>Discover What Causes the Bug</h3>
+      <p>Starting Evolution from your terminal with some special environment variables causes Evolution to display
+      more information on what it is currently doing.</p>
+      <p>The following is a list of variables and what each one tells Evolution to do:</p>
+
+      <ul>
+        <li>Mail
+          <ul>
+            <li><kbd>CAMEL_DEBUG=all</kbd> &mdash; for debugging email problems</li>
+            <li><kbd>CAMEL_DEBUG=gpg</kbd> &mdash; for debugging email problems with GPG encryption</li>
+    <!--    <li><kbd>CAMEL_VERBOSE_DEBUG=1</kbd> &mdash; also for debugging Email (not as featureful as above)</li> -->
+          </ul>
+        </li>
+        <li>Calendars
+          <ul>
+            <li><kbd>CALDAV_DEBUG=all</kbd> &mdash; for debugging problems with CalDav calendars</li>
+            <li><kbd>WEBCAL_DEBUG=1</kbd> &mdash; for debugging problems with read-only Web calendars</li>
+            <li><kbd>ALARMS_DEBUG=1</kbd> &mdash; for debugging problems with Calendar reminders/alarms</li>
+          </ul>
+        </li>
+        <li>Address books
+          <ul>
+            <li><kbd>WEBDAV_DEBUG=1</kbd> &mdash; for debugging problems with WEBDAV address books</li>
+            <li><kbd>LDAP_DEBUG=1</kbd> &mdash; for LDAP addressbooks (but combined with running ${install_prefix}/libexec/e-addressbook-factory on a console instead of Evolution itself)</li>
+    <!-- found in http://mail.gnome.org/archives/evolution-list/2011-August/msg00127.html -->
+            <li><kbd>GOOGLE_BACKEND_DEBUG=1</kbd> &mdash; for debugging problems with Google Contacts addressbooks (but combined with running ${install_prefix}/libexec/e-addressbook-factory on a console instead of Evolution itself)</li>
+          </ul>
+        </li>
+        <li>Microsoft Exchange accounts
+          <ul>
+            <li>Exchange MAPI account type
+             <ul>
+      <!-- found in http://mail.gnome.org/archives/evolution-list/2010-December/msg00168.html and
+           changed by http://git.gnome.org/browse/evolution-mapi/commit/src/libexchangemapi/e-mapi-debug.c?id=dd30f433bfbdb25cecf3002193d2f9f5f951f41e -->
+              <li><kbd>MAPI_DEBUG=1</kbd> &mdash; used for basic debugging of Exchange MAPI support inside of the evolution-mapi package</li>
+      <!-- found in http://git.gnome.org/browse/evolution-mapi/commit/src/libexchangemapi/e-mapi-debug.c?id=dd30f433bfbdb25cecf3002193d2f9f5f951f41e and explained by mcrha on IRC -->
+              <li><kbd>LIBMAPI_DEBUG=15</kbd> &mdash; also used for debugging Exchange MAPI support but way more powerful. Debugs the raw communication by passing the variable also to underlying libmapi and samba4 libraries</li>
+             </ul>
+            </li>
+            <li>Exchange EWS account type
+             <ul>
+      <!-- found in http://mail.gnome.org/archives/evolution-list/2011-April/msg00245.html -->
+              <li><kbd>EWS_DEBUG=1</kbd> &mdash; used for debugging Exchange EWS support: Prints each request and response</li>
+              <li><kbd>EWS_DEBUG=2</kbd> &mdash; Same as #1 plus all bodies</li>
+             </ul>
+            </li>
+            <li>Microsoft Exchange account type
+             <ul>
+              <li><kbd>E2K_DEBUG=1</kbd> &mdash; used for debugging classical Exchange support: Print each request and response</li>
+              <li><kbd>E2K_DEBUG=2</kbd> &mdash; Same as #1 plus all request and response headers</li>
+              <li><kbd>E2K_DEBUG=3</kbd> &mdash; Same as #2 plus bodies (except text/html)</li>
+              <li><kbd>E2K_DEBUG=4</kbd> &mdash; Same as #3 plus global catalog debug</li>
+              <li><kbd>E2K_DEBUG=5</kbd> &mdash; Same as #4 plus text/html bodies too</li>
+             </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Novell GroupWise accounts
+          <ul>
+            <li><kbd>GROUPWISE_DEBUG=1</kbd> &mdash; used for debugging GroupWise support</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>It's easy to start Evolution with custom variables. One would simply run something like the following:</p>
+      <pre class="screen">
+      CAMEL_DEBUG=all evolution &gt;&amp; evo.log
+      </pre>
+
+      <h3>How to Report Bugs</h3>
+      <p>Using <a href="http://bugzilla.gnome.org/">GNOME Bugzilla</a> is the best way to report bugs. An alternative
+      method is to join the IRC chanel #evolution (on irc.gnome.org) and ask someone there. After talking to the
+      person on IRC, you'll typically want to open a bug in Bugzilla anyway so that the issue can be tracked.
+      (It's most likely that the people on IRC will tell you to report the bug in Bugzilla too.)</p>
+
+      <h3>Debugging Evolution's Crashes (Getting a backtrace)</h3>
+
+      <p>If Evolution crashes, and you can reproduce it, than start Evolution in a debugger like gdb:</p>
+      <pre class="screen">
+      gdb evolution
+      </pre>
+
+      <p>Once gdb is running, you can do the following steps:</p>
+
+      <ol>
+        <li>Type "<kbd>run</kbd>" after gdb starts and attempt to reproduce the crash.</li>
+        <li>Take note of the output in gdb.</li>
+        <li>Type "<kbd>thread apply all bt</kbd>" to see more information about what went wrong.</li>
+      </ol>
+
+      <p>Including the debugging info acquired through the above method in a bug report in Bugzilla will enable the
+      developers pinpoint where something is going wrong, hopefully making it easier to fix the bug in Evolution.</p>
+
+      <h2>Extended Information About Evolution Bugs</h2>
+
+      <p>The bug tracking system for Evolution resides at <a href="http://bugzilla.gnome.org/">bugzilla.gnome.org</a>.</p>
+
+      <h3>Getting a debug backtrace</h3>
+      <p>To get a backtrace of a process, you can either directly run this process under gdb, or attach gdb to a
+      running instance of the process. For getting a debug backtrace for evolution, you would be interested in these
+      process-files.</p>
+
+      <ol>
+        <li>${install_prefix}/bin/evolution</li>
+        <li>${install_prefix}/libexec/e-calendar-factory</li>
+        <li>${install_prefix}/libexec/e-addressbook-factory</li>
+        <li>${install_prefix}/libexec/evolution/${version}/evolution-alarm-notify</li>
+        <li>${install_prefix}/libexec/evolution/${version}/evolution-exchange-storage</li>
+      </ol>
+
+      <h4>Follow these steps to run the process under gdb</h4>
+      <ol>
+        <li>Run the command 'gdb ${install_prefix}/path/of/process-file'</li>
+        <li>At the gdb prompt type 'run'</li>
+        <li>To get the backtrace at a particular instant, press ctrl+c, and you should get the gdb prompt. You could also
+          reach the gdb prompt directly, if the process crashes.</li>
+        <li>At the gdb prompt type 'thread apply all bt' to get the backtrace</li>
+      </ol>
+
+      <h4>To attach gdb to a running process</h4>
+      <ol>
+        <li>Get the process id of the process (you can find out by 'ps ax')</li>
+        <li>Run the command 'gdb -p &lt;process id&gt;'</li>
+        <li>At the gdb prompt, type 'thread apply all bt' to get the backtrace.</li>
+      </ol>
+
+      <p>You could also type 'continue' at the gdb prompt and proceed as usual and then press ctrl+c, to get the gdb
+      prompt again.</p>
+
+      <h3>GroupWise Debug</h3>
+
+      <p>You can debug the communications with GroupWise server with GROUPWISE_DEBUG environment variable. Evolution Data
+      Server communicates with GroupWise server using SOAP over http for accessing calendar and contacts data. When
+      Evolution Data Server is run with GROUPWISE_DEBUG set, the http headers and body (xml conent) of SOAP
+      request/responses are printed to standard output.</p>
+
+      <ol>
+        <li>Exit evolution and run the command 'evolution --force-shutdown'</li>
+        <li>Run the command 'env GROUPWISE_DEBUG=1 ${install_prefix}/libexec/e-calendar-factory &gt;&amp; /tmp/groupwise.out'
+          for Calendar issues, or 'env GROUPWISE_DEBUG=1 ${install_prefix}/libexec/e-addressbook-factory &gt;&amp;
+          tmp/groupwise.out' for address book issues</li>
+        <li>start evolution and access GroupWise calendar or contacts</li>
+      </ol>
+
+      <p>Evolution process also communicates with GroupWise server during Novell GroupWise account setup. One can run
+      evolution after setting the GROUPWISE_DEBUG in the same manner described above to debug any Novell GroupWise
+      account setup related problems.</p>
+
+      <h3>Evolution Exchange Connector Debug</h3>
+
+      <p>You can debug the communications with a Microsoft Exchange server 2000 or 2003 using the E2K_DEBUG environment
+      variable. Exchange connector runs as a separate process [evolution-exchange-storage]. You can run
+      evolution-exchange-storage with E2K_DEBUG set to a value from 1 to 5:</p>
+
+      <ul>
+       <li><kbd>E2K_DEBUG=1</kbd> &mdash; used for debugging classical Exchange support: Print each request and response</li>
+       <li><kbd>E2K_DEBUG=2</kbd> &mdash; Same as #1 plus all request and response headers</li>
+       <li><kbd>E2K_DEBUG=3</kbd> &mdash; Same as #2 plus bodies (except text/html)</li>
+       <li><kbd>E2K_DEBUG=4</kbd> &mdash; Same as #3 plus global catalog debug</li>
+       <li><kbd>E2K_DEBUG=5</kbd> &mdash; Same as #4 plus text/html bodies too</li>
+      </ul>
+
+      <p>You can also append 'm' to E2K_DEBUG to see mail stub debugging: it will print out everything read to or
+      written from the stub socket. (You can set E2K_DEBUG=m on evolution itself as well, to see the conversation from
+      the other side.)</p>
+
+      <p>Follow these steps to create a log file containing the webdav traffic.</p>
+
+      <ol>
+        <li>Exit evolution and run the command 'evolution --force-shutdown'</li>
+        <li>Run the command 'env E2K_DEBUG=4 ${install_prefix}/libexec/evolution-exchange-storage &gt;&amp; /tmp/exchange.out' [ You can replace 4 in the command with any of the digits mentioned earlier ]</li>
+        <li>Use evolution like usual.</li>
+      </ol>
+
+    </div>
+  </div>
+</div>
+
+ <!--#include virtual="foot.shtml"-->

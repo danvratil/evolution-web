@@ -1,0 +1,202 @@
+<!--#set var="title" value="Evolution" -->
+<!--#set var="section" value="features" -->
+<!--#include virtual="head.shtml" -->
+
+<div id="container" class="two_columns">
+  <div class="container_12">
+    <div class="page_title">
+      <h1>Features</h1>
+    </div>
+
+    <div class="content without_sidebar">
+      <p class="main_feature">You want features? Evolution has'em. Wanna see for yourself? Click a picture below, or
+      check out the <a href="screenshots.shtml">screenshots area.</a></p>
+
+      <div class="grid_12 alpha omega">
+        <h3>Intelligent Junk Mail Control</h3>
+        <img src="./images/48/spam.png" alt="Spam Control" align="left" style="margin-right:20px;">
+        <a href="./images/screenshots/2.0/evo-junkmail.png">
+          <img src="./images/screenshots/2.0/thumb-evo-junkmail.png" align="right" border="0" alt="Evolution Junk Mail Control"><br>
+        </a>
+        <p>Take control of your inbox! With Evolution's junk filtering, you're free to read the email you want and not
+        see much of the email you don't. Bayesian-based junk filtering with optional remote rules get rid of all of
+        the emails which bug you most.</p>
+        <p>Junk filtering is easy, too. You can either select "Mark as Junk" under the edit or context menu - or simply
+        click the junk button on the toolbar.</p>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Search Folders</h3>
+        <a href="./images/screenshots/2.0/evo-vfolder.png">
+          <img src="./images/screenshots/2.0/thumb-evo-vfolder.png" align="left" border="0" style="margin-right: 10px;" alt="Evolution Search Folders">
+        </a>
+
+        <p>See your email the way you want it. Search Folders are saved intelligent searches which can display groups of
+        email according to user-specified criteria. Create Search Folders to combine mail from different mail accounts into
+        a single view, quickly view all mail from your boss (or a particular friend :) - and new in 2.0, optional include
+        entire threads in the results!</p>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Integrated Security</h3>
+        <a href="./images/screenshots/2.0/evo-security.png">
+          <img src="./images/screenshots/2.0/thumb-evo-security.png" align="right" border="0" style="margin-left: 10px;" alt="Evolution Integrated Security">
+        </a>
+
+        <p>Evolution includes support for signing and encrypting mail via GPG (GNU Privacy Guard) and S/MIME. Encrypting
+        mail helps you protect your privacy and helps those receiving your mail know its really from you. Evolution
+        2.0 includes a handy interface to help you manage your GPG keys and S/MIME certificates as well as a place to
+        manage keys and certificates which have been shared to you.</p>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Desktop Integration</h3>
+
+        <p>By using the evolution-data-server, other GNOME applications are integrating with Evolution.</p>
+
+        <ul>
+          <li>gnome-panel calendar applet lists your appointments and tasks.</li>
+          <li>Synchronize your <a href="http://pidgin.im/">Pidgin</a> buddies with your Evolution contacts.</li>
+          <li>View <a href="http://live.gnome.org/Planner">Planner</a> files as Evolution task lists.</li>
+        </ul>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Filters</h3>
+
+        <p>Filters enable you to organize your mail as it arrives or on request. Filters allow you to bundle, sort and
+        distribute mail into various folders or otherwise process mail. You can create multiple filters to perform multiple
+        actions. For example, your filters could put copies of one message into multiple folders, or keep one copy and
+        send one to another person, and it can do that quickly.</p>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Searching</h3>
+
+        <p>Evolution automatically indexes messages so searching for that long lost email is faster and easier than many
+        other mail clients.</p>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Web Calendars</h3>
+
+        <p>You can add your favorite Web calendar so you can see upcoming football, movie or DVD releases, or a friend's
+        schedule inside of Evolution. One of the most popular sites for Web calendars is
+        <a href="http://icalshare.com/">iCalShare</a>.</p>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Collaboration Server Support</h3>
+
+        <p>Evolution includes support for Microsoft Exchange, Novell GroupWise and
+        <a href="http://www-old.kolab.org/about-kolab-clients.html">Kolab2</a> servers. You can configure
+        Evolution to act as a client for any of these.</p>
+
+        <p>The Evolution team is looking to support more collaboration servers, especially those based on open
+        standards. If you are involved in such a project, please let us know so we can add it to this list!</p>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Multiple Account Management</h3>
+
+        <p>Account management tools let you receive, manage and organize messages from multiple email accounts or
+        collaboration servers. Create new mail accounts easily with the Evolution account assistant.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container_12">
+    <div class="content without_sidebar">
+      <h2>Plugins</h2>
+
+      <p class="main_feature">Evolution comes loaded with plugins to choose from.</p>
+
+      <div class="container_12">
+        <div class="grid_6 alpha">
+          <h3>Attachment Reminder</h3>
+          <p>Reminds you when you forgot to add an attachment to a mail message.</p>
+        </div>
+        <div class="grid_6 omega">
+          <h3>Automatic Contacts</h3>
+          <p>Takes the gruntwork out of managing your address book.</p>
+        </div>
+        <div class="grid_6 alpha">
+          <h3>Backup and Restore</h3>
+          <p>Backup and restore your Evolution data and settings.</p>
+        </div>
+        <div class="grid_6 omega">
+          <h3>Automatic Contacts</h3>
+          <p>Takes the gruntwork out of managing your address book.</p>
+        </div>
+        <div class="grid_6 alpha">
+          <h3>Calendar Publishing</h3>
+          <p>Publish calendars to the web.</p>
+        </div>
+
+        <div class="grid_6 omega">
+          <h3>Default Sources</h3>
+          <p>Mark your preferred address book and calendar as default.</p>
+        </div>
+        <div class="grid_6 alpha">
+          <h3>Attachment Reminder</h3>
+          <p>Reminds you when you forgot to add an attachment to a mail message.</p>
+        </div>
+        <div class="grid_6 omega">
+          <h3>External Editor</h3>
+          <p>Use your preferred text editor to compose messages.</p>
+        </div>
+        <div class="grid_6 alpha">
+          <h3>Face</h3>
+          <p>Attach a small picture of your face to outgoing messages.</p>
+        </div>
+        <div class="grid_6 omega">
+          <h3>IMAP Features</h3>
+          <p>Fine-tune your IMAP accounts.</p>
+        </div>
+        <div class="grid_6 alpha">
+          <h3>Itip Formatter</h3>
+          <p>Display "text/calendar" MIME parts in mail messages.</p>
+        </div>
+        <div class="grid_6 omega">
+          <h3>Mailing List Actions</h3>
+          <p>Perform common mailing list actions (subscribe, unsubscribe, etc.).</p>
+        </div>
+        <div class="grid_6 alpha">
+          <h3>Mail Notification</h3>
+          <p>Notifies you when new mail messages arrive.</p>
+        </div>
+        <div class="grid_6 omega">
+          <h3>Mail-to-Task</h3>
+          <p>Convert a mail message to a task.</p>
+        </div>
+        <div class="grid_6 alpha">
+          <h3>Mark All Read</h3>
+          <p>Mark all mail messages in a folder as read.</p>
+        </div>
+        <div class="grid_6 omega">
+          <h3>Outlook DBX Import</h3>
+          <p>Import DBX files from Microsoft Outlook Express.</p>
+        </div>
+        <div class="grid_6 alpha">
+          <h3>Outlook PST Import</h3>
+          <p>Import PST files from Microsoft Outlook.</p>
+        </div>
+        <div class="grid_6 omega">
+          <h3>Prefer Plain Text</h3>
+          <p>View mail messages as plain text, even if they contain HTML content.</p>
+        </div>
+        <div class="grid_6 alpha">
+          <h3>Save Selected</h3>
+          <p>Save a calendar or task list to disk.</p>
+        </div>
+
+        <div class="grid_6 omega">
+          <h3>Templates</h3>
+          <p>Compose a new message from a saved template.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--#include virtual="foot.shtml"-->

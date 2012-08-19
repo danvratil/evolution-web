@@ -1,0 +1,109 @@
+<!--#set var="title" value="Evolution" -->
+<!--#set var="section" value="download" -->
+<!--#include virtual="head.shtml" -->
+
+<div id="container" class="two_columns">
+  <div class="container_12">
+    <div class="page_title">
+      <h1>Download</h1>
+    </div>
+
+    <div class="content without_sidebar">
+      <img src="./images/48/distros.png" align="left" style="margin-right: 10px;">
+
+      <p class="main_feature">Evolution most likely ships with your Linux distribution of choice. To get your latest
+      supported version, you will want to check with your distribution supplier.</p>
+
+      <div class="grid_12 alpha omega">
+        <h3>Use Source Packages</h3>
+        <img src="./images/48/compile.png" align="left" style="margin-right: 10px;">
+
+        <p>For those of you in the compiling-from-source know, you can download the latest stable or unstable releases.
+        Grab the latest version of the source from below and have fun compiling!</p>
+
+        <div class="container_12">
+          <div class="grid_6 alpha">
+            <h4>Current Stable Release</h4>
+
+            <table class="styled single" width="50%">
+              <tr>
+                <th>Package</th>
+                <th align="left">Version</th>
+              </tr>
+              <tr>
+                <td><a href="http://download.gnome.org/sources/evolution/3.4/evolution-3.4.0.1.tar.xz">Evolution</a></td>
+                <td>3.4.0.1</td>
+              </tr>
+              <tr>
+                <td><a href="http://download.gnome.org/sources/evolution-data-server/3.4/evolution-data-server-3.4.0.tar.xz">Evolution Data Server</a></td>
+                <td>3.4.0</td>
+              </tr>
+              <tr>
+                <td><a href="http://download.gnome.org/sources/evolution-ews/3.4/evolution-ews-3.4.0.tar.xz">Evolution EWS</a></td>
+                <td>3.4.0</td>
+              </tr>
+              <tr>
+                <td><a href="http://download.gnome.org/sources/evolution-mapi/3.4/evolution-mapi-3.4.0.tar.xz">Evolution MAPI</a></td>
+                <td>3.4.0</td>
+              </tr>
+              <tr>
+                <td><a href="http://download.gnome.org/sources/evolution-exchange/3.4/evolution-exchange-3.4.0.tar.xz">Evolution Exchange</a></td>
+                <td>3.4.0</td>
+              </tr>
+
+              <tr>
+                <td><a href="http://download.gnome.org/sources/evolution-groupwise/3.4/evolution-groupwise-3.4.0.tar.xz">Evolution GroupWise</a></td>
+                <td>3.4.0</td>
+              </tr>
+              <tr>
+                <td><a href="http://download.gnome.org/sources/evolution-kolab/3.4/evolution-kolab-3.4.0.2.tar.xz">Evolution Kolab</a></td>
+                <td>3.4.0.2</td>
+              </tr>
+              <tr>
+                <td><a href="http://download.gnome.org/sources/gtkhtml/4.4/gtkhtml-4.4.0.tar.xz">GtkHTML</a></td>
+                <td>4.4.0</td>
+              </tr>
+            </table>
+
+            <p><a href="./previous.shtml">Previous Stable Releases</a></p>
+
+            <p>Check the <a href="http://www.gnome.org/start/unstable/">GNOME release schedule</a>
+            for upcoming release dates.</p>
+          </div>
+
+          <div class="grid_6 omega">
+            <h4>Current Unstable Release</h4>
+
+            <p>None at this time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Grab the Sources from Git</h3>
+
+        <p>Paul Smith wrote a very useful <a href="http://mad-scientist.us/Makefile">Makefile</a> that
+        automates most of the process of building Evolution source code from the
+        <a href="http://git.gnome.org/">GNOME Git repository</a>. See Paul's article
+        "<a href="http://mad-scientist.us/evolution.html">Build Evolution from Source Made Simple</a>"
+        for full details.</p>
+
+        <p>You can also use GNOME's default tool <a href="https://live.gnome.org/Jhbuild">Jhbuild</a> for building
+        Evolution from Git. For general information how to use GNOME Git see the
+        <a href="https://live.gnome.org/Git/Developers">corresponding wikipage</a>.</p>
+      </div>
+
+      <div class="grid_12 alpha omega">
+        <h3>Microsoft Windows Packages</h3>
+
+        <p>An experimental build of Evolution 3.0.2 is
+        <a href="http://download.opensuse.org/repositories/windows:/mingw:/win32:/EXPERIMENTAL/openSUSE_Factory/noarch/">
+        available for Microsoft Windows</a>. Please read
+        <a href="http://fridrich.blogspot.com/2010/05/experimental-evolution-installer-for.html">
+        this blog post</a> for how to install these RPMs on Windows.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--#include virtual="foot.shtml"-->
